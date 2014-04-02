@@ -21,15 +21,17 @@ var_dump(json_decode($json, true));
 2) Select a random array element from those of decoded json ,a sample code to fetch six random array element from a given 
 array is:
 
-'''<?php
+'''php <?php
 $input = array("link1", "link2", "link3", "link4", "link5", "link6");
+
 $rando_m = array_rand($input, 6);
+
 echo $input[$rand_keys[0]] . "\n";
 echo $input[$rand_keys[1]] . "\n";
 echo $input[$rand_keys[2]] . "\n";
 echo $input[$rand_keys[3]] . "\n";
 echo $input[$rand_keys[4]] . "\n";
 echo $input[$rand_keys[5]] . "\n";
-?>'''
+?> '''
 
 The presented format for the api requested is xml for ease of readibilty but for faster request json will be used.
