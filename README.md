@@ -7,7 +7,7 @@ This is an explanation of how to gather JSON response from Wikimedia Commons abo
 
 The api request to retrieve link of images belonging to a category is:
 
-'''https://commons.wikimedia.org/w/api.php?action=query&generator=categorymembers&gcmtype=file&gcmtitle=Category:human&prop=info|imageinfo&gcmlimit=200&iiprop=url&format=xml'''
+'''https://commons.wikimedia.org/w/api.php?action=query&generator=categorymembers&gcmtype=file&gcmtitle=Category:human&prop=info|imageinfo&gcmlimit=200&iiprop=url&format=xml '''
 
 Now in order to fetch a random image from those provided, we need to write a php script to:
 
