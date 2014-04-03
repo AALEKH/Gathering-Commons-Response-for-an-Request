@@ -4,13 +4,13 @@ $result_of_animals = simplexml_load_file('https://commons.wikimedia.org/w/api.ph
 
 for ($x=0; $x<2; $x++)
   {
-    $rnd1 = mt_rand(1,49);	
+    $rnd1 = mt_rand(1,30);	
     echo "<img style='height:100px;width:100px;' src='".$result_of_machines->query->pages->page[$rnd1]->imageinfo->ii['url']."'>";
   } 
 
 for ($x=0; $x<6; $x++)
   {
-    $rnd2 = mt_rand(1,49);	
+    $rnd2 = mt_rand(1,30);	
     echo "<img style='height:100px;width:100px;' src='".$result_of_animals->query->pages->page[$rnd2]->imageinfo->ii['url']."'>";
   } 
 
