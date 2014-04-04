@@ -1,6 +1,6 @@
 <?php
 
-$arr_for_categories=array("plants","animals","machines");
+$arr_for_categories=array("Mountains","machines","Puppies");
 $arr_rand_categories = array();
 $count_categories = count($arr_for_categories);
 
@@ -14,7 +14,7 @@ for ($x=0; $x<2; $x++)
   	}
   	else{
 
-  		$rand_category = rand(0, $a_two-1);
+  		$rand_category = rand(0, $count_categories-1);
   		array_push($arr_rand_categories, $arr_for_categories[$rand_category]);
   	}
 	
