@@ -1,6 +1,6 @@
 <?php
 
-$arr_for_categories=array("human","animals","machines");
+$arr_for_categories=array("plants","animals","machines");
 $arr_rand_categories = array();
 $count_categories = count($arr_for_categories);
 
