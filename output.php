@@ -1,5 +1,7 @@
 <?php
 
+/*The given lines is used to select random categories out of those provided in the array */
+
 $arr_for_categories=array("mountains","kittens","Puppies");
 $arr_rand_categories = array();
 $count_categories = count($arr_for_categories);
@@ -19,6 +21,8 @@ for ($x=0; $x<2; $x++)
   	}
 	
   } 
+
+/*The given lines is used to fetch the url of a category from wikimedia Commons */
 
 $url_one = 'https://commons.wikimedia.org/w/api.php?action=query&generator=categorymembers&gcmtype=file&gcmtitle=Category:'.urlencode($arr_rand_categories[0]).'&prop=imageinfo&gcmlimit=100&iiprop=url&format=json&indexpageids';
 $url_two = 'https://commons.wikimedia.org/w/api.php?action=query&generator=categorymembers&gcmtype=file&gcmtitle=Category:'.urlencode($arr_rand_categories[1]).'&prop=imageinfo&gcmlimit=100&iiprop=url&format=json&indexpageids';
@@ -62,6 +66,7 @@ for ($x=0; $x<6; $x++)
 	
   }  
 
+/*The given lines are used to display the images */
 
 for ($x=0; $x<2; $x++)
   {
